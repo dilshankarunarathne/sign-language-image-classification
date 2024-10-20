@@ -1,0 +1,13 @@
+/* Add or modify these styles in your stylesheet */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logout-button {
+    order: -1; /* Move the logout button to the leftmost position */
+    margin-right: 20px; /* Add some margin to the right of the logout button */
+}
+

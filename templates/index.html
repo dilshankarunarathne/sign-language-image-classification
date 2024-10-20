@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLSignDetect</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+<body>
+
+    {% if current_user.is_authenticated %}
+        <!-- If the user is authenticated (logged in) -->
+        <form method="POST" action="{{ url_for('upload_image') }}" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*" required>
+            <input type="submit" value="Upload Image">
+        </form>
+        
+        <!-- <button id="startWebcam">Start Webcam</button>
+        <button id="stopWebcam" disabled>Stop Webcam</button> -->
+        <a href="{{ url_for('logout') }}">Logout</a>
+        {% else %}
+        <!-- If the user is not authenticated (not logged in) -->
+        <h1 style="text-align: center;">Welcome to <span style="color: red;">SLSignDetect</span></h1>
+        
+        <div class="container" style="margin-top: 50px;">
+            <div id="about-section">
+                <h2 style="color: wheat;">About</h2>
+                <p> Our web application is designed to effortlessly interpret Sinhala Sign Language gestures, providing a seamless bridge for communication within the deaf and hard-of-hearing community. With real-time gesture recognition, user-friendly interface, and educational resources, SLSignDetect aims to make Sinhala Sign Language more accessible and inclusive. Join us in breaking down communication barriers and fostering a world where everyone can express themselves with ease.</p>
+            </div>
+            <div id="signup-login-buttons" style="margin-top: 0px; background-color: #F3D7CA; padding: 10px; border-radius: 5px;">
+                <a href="{{ url_for('signup') }}" class="button signup">Sign Up</a>
+                <div class="or-divider">OR</div>
+                <a href="{{ url_for('login') }}" class="button login">Login</a>
+            </div>
+        </div>
+    {% endif %}
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

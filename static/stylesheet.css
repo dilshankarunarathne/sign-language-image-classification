@@ -1,0 +1,90 @@
+/* Add or modify these styles in your stylesheet */
+
+body {
+    margin: 20px; /* Adjust the margin as needed */
+    background-image: url('images/v1066-059c.jpg'); /* Set the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-position: center center; /* Center the background image */
+    background-size: cover;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+h1 {
+    font-family: 'Brush Script MT', cursive; /* Set the font for h1 to Brush Script MT */
+    font-weight: bold;
+}
+
+#about-section {
+    width: 40%; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 150px;
+    background-color: #3E3232;
+    color: white;
+    font-size: 18px;
+}
+
+#signup-login-buttons {
+    width: 20%; /* Adjust the width as needed */
+    text-align: center;
+    font-size: 18px;
+    margin-right: 300px;
+}
+
+.or-divider {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 0px; /* Adjust the spacing between "OR" and buttons */
+    margin-bottom: 20px;
+    color: #777;    /* Adjust the color of the "OR" text */
+}
+
+.button {
+    display: block;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 300px; /* Set a maximum width for the buttons if needed */
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust the margin-bottom for white space */
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 300ms;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #4CAF50; /* Green color */
+    color: #fff; /* White text */
+}
+
+.login {
+    background-color: #008CBA; /* Blue color */
+    color: #fff; /* White text */
+}
+
+.button:hover {
+    filter: brightness(90%); /* Adjust brightness on hover */
+}
+
+#image-container {
+    text-align: center; /* Center the content */
+    margin-top: 100px;   /* Add a top margin of 20px (adjust as needed) */
+}
+
+#image-container img {
+    max-width: 100%;    /* Make sure the image doesn't exceed its container */
+    height: auto;       /* Maintain the aspect ratio of the image */
+    display: inline-block; /* Align the image as inline-block for centering */
+}
