@@ -4,3 +4,5 @@
 *.pyc
 
 data/
+data.pickle
+model.p
