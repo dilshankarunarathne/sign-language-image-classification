@@ -21,7 +21,27 @@ labels_dict = {
     2: 'Two',
     3: 'Three',
     4: 'Four',
-    5: 'Five'
+    5: 'Five',
+    6: 'Six',
+    7: 'Seven',
+    8: 'Eight',
+    9: 'Nine',
+    10: 'A',
+    11: 'B',
+    12: 'C',
+    13: 'D',
+    14: 'E',
+    15: 'F',
+    16: 'G',
+    17: 'H',
+    18: 'I',
+    19: 'J',
+    20: 'K',
+    21: 'L',
+    22: 'M',
+    23: 'N',
+    24: 'O',
+    25: 'P'
 }
 
 max_length = 42  # Set this to the maximum length used during training
